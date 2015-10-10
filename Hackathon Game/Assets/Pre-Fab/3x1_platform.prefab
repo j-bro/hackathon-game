@@ -1,13 +1,162 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &110048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 482780}
+  - 212: {fileID: 21235868}
+  - 50: {fileID: 5042344}
+  - 60: {fileID: 6074682}
+  m_Layer: 0
+  m_Name: 3x1_platform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &482780
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110048}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.10701942, y: -.535473824, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!50 &5042344
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110048}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &6074682
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110048}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -.3359375, y: -.5}
+      - {x: -.265625, y: -.4921875}
+      - {x: -.0859375, y: -.3671875}
+      - {x: -.078125, y: -.3984375}
+      - {x: .0078125, y: -.5}
+      - {x: .109375, y: -.5}
+      - {x: .1796875, y: -.421875}
+      - {x: .3125, y: -.5}
+      - {x: .3671875, y: -.5}
+      - {x: .4296875, y: -.453125}
+      - {x: .4921875, y: -.3671875}
+      - {x: .53125, y: -.4453125}
+      - {x: .6015625, y: -.5}
+      - {x: .703125, y: -.5}
+      - {x: .7421875, y: -.46875}
+      - {x: .8046875, y: -.4375}
+      - {x: .875, y: -.421875}
+      - {x: .9375, y: -.453125}
+      - {x: 1, y: -.4609375}
+      - {x: 1.0390625, y: -.4296875}
+      - {x: 1.109375, y: -.296875}
+      - {x: 1.2890625, y: -.140625}
+      - {x: 1.3515625, y: -.078125}
+      - {x: 1.4140625, y: .0703125}
+      - {x: 1.5, y: .1953125}
+      - {x: 1.5, y: .421875}
+      - {x: 1.4609375, y: .4921875}
+      - {x: 1.3671875, y: .5}
+      - {x: -.4609375, y: .5}
+      - {x: -.515625, y: .46875}
+      - {x: -.5390625, y: .5}
+      - {x: -.8359375, y: .5}
+      - {x: -.8359375, y: .4921875}
+      - {x: -.9921875, y: .5}
+      - {x: -1.4296875, y: .5}
+      - {x: -1.4609375, y: .4921875}
+      - {x: -1.4921875, y: .4375}
+      - {x: -1.5, y: .421875}
+      - {x: -1.5, y: .2109375}
+      - {x: -1.4375, y: .15625}
+      - {x: -1.3984375, y: .109375}
+      - {x: -1.3828125, y: -.0234375}
+      - {x: -1.359375, y: -.0625}
+      - {x: -1.234375, y: -.1640625}
+      - {x: -1.0546875, y: -.25}
+      - {x: -.9453125, y: -.359375}
+      - {x: -.8828125, y: -.3984375}
+      - {x: -.7109375, y: -.5}
+      - {x: -.5, y: -.5}
+      - {x: -.4765625, y: -.4921875}
+      - {x: -.4765625, y: -.390625}
+      - {x: -.3828125, y: -.5}
+    - - {x: -.484375, y: -.1953125}
+      - {x: -.5, y: -.1953125}
+      - {x: -.515625, y: -.2265625}
+      - {x: -.5078125, y: -.2265625}
+    - - {x: .4921875, y: -.0859375}
+      - {x: .5, y: -.0703125}
+      - {x: .5234375, y: -.1015625}
+      - {x: .5078125, y: -.1015625}
+    - - {x: .515625, y: .265625}
+      - {x: .515625, y: .2890625}
+      - {x: .4921875, y: .3046875}
+      - {x: .5234375, y: .234375}
+--- !u!212 &21235868
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110048}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1584397385
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 4fad73af311304f3abcf6627dd63103d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 0}
+  m_RootGameObject: {fileID: 110048}
   m_IsPrefabParent: 1

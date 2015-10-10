@@ -10,7 +10,7 @@ public class PlayerControl : MonoBehaviour {
 
     void FixedUpdate ()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
         {
            //set the base player speed to the screen scroll rate
            // float xSpeed = 50;
@@ -20,7 +20,7 @@ public class PlayerControl : MonoBehaviour {
            // if (currentSpeed.x < xSpeed)
            GetComponent<Rigidbody2D>().AddForce(Vector2.right * 50f, ForceMode2D.Force);
         }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+		else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
             GetComponent<Rigidbody2D>().AddForce(Vector2.left * 50f, ForceMode2D.Force);
         }
