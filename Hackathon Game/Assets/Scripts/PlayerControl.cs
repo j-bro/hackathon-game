@@ -3,14 +3,17 @@ using System.Collections;
 
 public class PlayerControl : MonoBehaviour {
 
+	bool jumping;
+	Time jumpedAt;
+
 	// Use this for initialization
 	void Start () {
-	
+		jumping = false;
 	}
 
     void FixedUpdate ()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
            //set the base player speed to the screen scroll rate
            // float xSpeed = 50;
@@ -20,13 +23,13 @@ public class PlayerControl : MonoBehaviour {
            // if (currentSpeed.x < xSpeed)
            GetComponent<Rigidbody2D>().AddForce(Vector2.right * 50f, ForceMode2D.Force);
         }
-		else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+		else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             GetComponent<Rigidbody2D>().AddForce(Vector2.left * 50f, ForceMode2D.Force);
         }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 5), ForceMode2D.Impulse);
+			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 11), ForceMode2D.Impulse);
         }
     }
 	
